@@ -4,11 +4,15 @@ def feetToInches():
 
     totalInches = (feet * 12) + inches
 
-    print(str(feet) + "'" , str(inches) + '" is' , totalInches , "inches.")
+    print("-->" , str(feet) + "'" , str(inches) + '" is' , totalInches , "inches.")
 
 
 def inchesToFeet():
-    pass
+    inches = int(input("> Inches: "))
+
+    totalFeet = inches / 12
+
+    print("-->" , str(inches) + '" is' , "%.2f feet." % totalFeet)
 
 
 def meterToFeet():
