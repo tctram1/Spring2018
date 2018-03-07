@@ -16,7 +16,12 @@ def inchesToFeet():
 
 
 def meterToFeet():
-    pass
+    meter = int(input("> Meter: "))
+
+    # 1 meter = 3.28 feet
+    totalFeet = meter * 3.28
+
+    print("-->" , str(meter) , 'meter(s) is' , "%.2f feet." % totalFeet)
 
 
 def start():
