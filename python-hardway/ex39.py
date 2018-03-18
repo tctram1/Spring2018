@@ -103,7 +103,7 @@ capitals = {
     'WA': 'Olympia',
     'WV': 'Charleston',
     'WI': 'Madison',
-    ['WY', 'Wyoming']: 'Cheyenne'
+    'WY': 'Cheyenne'
 }
 
 
@@ -114,8 +114,16 @@ choice = input('Choose Option >> ' )
 #print(input('Choose Option >> ' ))
 
 if choice == '1':
-    print('The abbreviation is >>' , states[input('Choose a state >> ')])
+    state = input('Choose a state >> ')
+    if state in states:
+        print('The abbreviation is >>' , states[state])
+    else:
+        print('The state is unvalid!')
 elif choice == '2':
-    print('The capital is >>' , capitals[input('Enter the abbreviation of a state >> ')])
+    capital = input('Enter the state abbreviation >> ')
+    if capital in capitals:
+        print('The capital is >>' , capitals[capital])
+    else:
+        print('The state abbreviation is unvalid!')
 else:
     print("I don't know what you're talking about! \n")
