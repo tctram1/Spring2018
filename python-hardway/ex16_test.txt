@@ -1,3 +1,0 @@
-I'm okay.
-I'm writing this code.
-This is the final line.
