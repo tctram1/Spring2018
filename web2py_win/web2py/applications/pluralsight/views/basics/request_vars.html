@@ -1,0 +1,16 @@
+{{extend 'layout.html'}}
+<h1>Request Vars</h1>
+
+<form method='post'>
+    <input type='text' name='num1'> + <input type='text' name='num2'>
+    <input type='submit' value='Add'>
+</form>
+
+
+<h3>
+    Number 1: {{ =num1 }}
+    <br/>
+    Number 2: {{ =num2 }}
+    <br/>
+    The total is: {{ =total }}
+</h3>
